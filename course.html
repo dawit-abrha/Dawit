@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width ,initial-
+        scale=1.0">
+        <title>my HYF Entrance assignment</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <section class="about-header">
+            <nav>
+                <a href="hyf"><img src="image/tlc-logo.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="d.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="course.html">program</a></li>
+                        <li><a href="Services.html">Services</a></li>
+                        <li><a href="Contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+             <h1>Our Courses</h1>
+        </section>
+        <section class="course">
+            <h1>Programs We Offer</h1>
+            <p>We train motivated individuals who want to start a career in web development.No technical background required. Our free seven-month program begins every two months.
+            </p>
+            <div class="row">
+                  <div class="course-col">
+                    <h3>Front-end Development</h3>
+                    <p>Client-side web development, or front-end web development, is another name for this process. It is the practice of creating a website front end using markup languages like HTML, CSS, and JavaScript.</p>
+                </div>
+                <div class="course-col">
+                    <h3>Back-End Web Development</h3>
+                    <p>Backend development, or server-side web development, is the process of creating a website infrastructure. Back-end developers are responsible for the conceptual framework of a website and the coding that supports it. The logic, databases, servers, and APIs on the back-end are the primary areas of interest.</p>
+                </div>
+                <div class="course-col">
+                    <h3>Full-Stack Web Development</h3>
+                    <p>Creating both the front and back ends of a website is known as “full-stack web development.” A full-stack developer is one that is well-versed in all aspects of creating and maintaining websites, from design, coding, databases to fixing bugs.</p>
+                </div>
+            </div>
+        </section>
+       
+        
+<!--------------footer-->
+<section class="footer">
+    <h4>About us</h4>
+        <p>Email: Dawit.abrha@gmail</p>
+        <p>Whatsapp:+316863740</p>
+
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-skype"></i>
+        <i class="fa fa-instagram"></i>
+        <p>Follow us <i class="fa fa-heart-o"></i> on social medias</p>
+    </div>
+</section>
+
+
+        <!---javaScript for menu-bar-->
+<script>
+    var navlinks = document.getElementById("navLinks");
+    function showMenu(){
+        navlinks.style.right ="0";
+    }
+    function hideMenu(){
+        navlinks.style.right ="-200px";
+    }
+     <!---javaScript for scrollUp-->
+
+    const goUp = document.getElementById("scrollUpIcon");
+
+window.addEventListener('scroll', iconVisibility);
+
+function iconVisibility() {
+      if (window.scrollY > 400) {
+        goUp.style.display = "block";
+    } else {
+        goUp.style.display = "none";
+    }
+  }
+
+goUp.addEventListener('click', () => {
+    window.scrollTo(0, 0);
+});
+
+</script>
+    </body>
+</html>
