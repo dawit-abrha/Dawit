@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width ,initial-
+        scale=1.0">
+        <title>my HYF Entrance assignment</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <section class="about-header">
+            <nav>
+                <a href="hyf"><img src="image/tlc-logo.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="d.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="course.html">program</a></li>
+                        <li><a href="Services.html">Services</a></li>
+                        <li><a href="Contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+             <h1>Our Services</h1>
+        </section>
+        <section class="facilities">
+            <h1>Our Services & Facilities</h1>
+            <p></p>
+        
+            <div class="row">
+                <div class="facilities-col">
+                     <img src="image/training .jpeg">
+                     <h3>Smart Room for training</h3>
+                     <p>We Have Smart training room .</p>
+                </div>
+                <div class="facilities-col">
+                     <img src="image/cover1.webp">
+                     <h3>Computer Lab</h3>
+                     <p>We have atrractive Computer lab Room </p>
+                </div>
+                <div class="facilities-col">
+                    <img src="image/pause.webp">
+                    <h3>Cafee</h3>
+                    <p>We have Hot drinks such as tea and coffee in Break time</p>
+                </div>
+            </div>
+        </section>
+       
+        
+<!--------------footer-->
+<section class="footer">
+    <h4>About us</h4>
+        <p>Email: Dawit.abrha@gmail</p>
+        <p>Whatsapp:+316863740</p>
+
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-skype"></i>
+        <i class="fa fa-instagram"></i>
+        <p>Follow us <i class="fa fa-heart-o"></i> on social medias</p>
+    </div>
+</section>
+
+
+        <!---javaScript for menu-bar-->
+<script>
+    var navlinks = document.getElementById("navLinks");
+    function showMenu(){
+        navlinks.style.right ="0";
+    }
+    function hideMenu(){
+        navlinks.style.right ="-200px";
+    }
+     <!---javaScript for scrollUp-->
+
+    const goUp = document.getElementById("scrollUpIcon");
+
+window.addEventListener('scroll', iconVisibility);
+
+function iconVisibility() {
+      if (window.scrollY > 400) {
+        goUp.style.display = "block";
+    } else {
+        goUp.style.display = "none";
+    }
+  }
+
+goUp.addEventListener('click', () => {
+    window.scrollTo(0, 0);
+});
+
+</script>
+    </body>
+</html>
